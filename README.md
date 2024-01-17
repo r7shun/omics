@@ -53,3 +53,39 @@ Iterate over above steps, different combinations of dimensionality reduction and
 ### Visualization and Interpretation
 
 Utilize visualization tools (like scatter plots from PCA, t-SNE, or UMAP reductions) to interpret and validate the clusters.
+
+![gmm](./GMM-cluster3.png)
+
+## Identifying the correct number of patient subpopulations
+Considering the above GMM clustering, although the n_components is set to 4, but cluster2(indicated by green dot) is more likely an outlier, so we think the correct number of patient subpopulations is 3.
+
+
+# Feature Selection
+
+## Pipeline for feature selection
+
+### Remove Outliers
+Remove the data points that belong to the outlier cluster (cluster 2 in our case) to avoid skewing the feature selection.
+
+### Feature Importance Methods
+
+
+- ANOVA F-test: A statistical test used to compare the means of the features across the clusters.
+- Mutual Information: A non-parametric method that measures the dependency between the features and the cluster assignment.
+- Random Forests or Gradient Boosting Machines: Tree-based methods can provide feature importances based on how well they improve the purity of the node.
+  
+### Determining the Correct Number of Features
+
+Keep:
+
+- A certain number of features with the highest scores.
+- Features that have a p-value below a certain threshold (for ANOVA).
+- Features that have mutual information above a certain threshold.
+
+### Validation
+
+ Validate that the features we've selected are indeed indicative of the clusters.
+ - Use the selected features to run a clustering algorithm again and check if the clusters are more distinct.
+ - Apply a classification algorithm to predict cluster membership and assess its performance.
+
+## Identifying the correct number of features

@@ -72,7 +72,7 @@ Remove the data points that belong to the outlier cluster (cluster 2 in our case
 
 - ANOVA F-test: A statistical test used to compare the means of the features across the clusters.
 - Mutual Information: A non-parametric method that measures the dependency between the features and the cluster assignment.
-- Random Forests or Gradient Boosting Machines: Tree-based methods can provide feature importances based on how well they improve the purity of the node.
+- Random Forests / Gradient Boosting Machines: Tree-based methods can provide feature importances based on how well they improve the purity of the node.
   
 ### Determining the Correct Number of Features
 

@@ -89,3 +89,11 @@ Keep:
  - Apply a classification algorithm to predict cluster membership and assess its performance.
 
 ## Identifying the correct number of features
+
+![fs](./feature-selection-cluster.png)
+
+the new cluster assignment based on the selected 18 features has a similarity of 74% to the original assignmet, (although i also tried with 12 selected features with 78% similarity, by looking at the cluster visualization we think the one with 18 features is more accurate.)
+
+Therefore, the correct number of features is 18. Selected features include  `['NINJ1', 'CTBP2', 'DOCK1', 'FAHD2A', 'IGLV5-45', 'STAT5A', 'MCM3', 'SELENOF', 'MANF', 'FKBP5', 'SEC24A', 'CEACAM7', 'ITGAM', 'ANKRD13A', 'S100A12', 'HBG2', 'PODN', 'FCN3']`
+
+Adjusted Rand Index comparing the non-outlier groups: 0.7444328423606514

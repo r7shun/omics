@@ -98,16 +98,17 @@ Therefore, the correct number of features is 18. Selected features include  `['N
 
 Adjusted Rand Index comparing the non-outlier groups: 0.7444328423606514
 
-#Cluster analysis with the metadata
-##Explores the relationship between patient metadata features and predefined patient clusters.The clusters were identified in previous analyses based on proteomic data.
-##Methdology: 
-###Data Integration: Combined the patient metadata with the existing cluster assignments to create a unified dataset for analysis.
-###Statistical Examination: Conducted statistical tests to compare the distribution of metadata features across the different clusters. This included ANOVA for continuous variables and Chi-square tests for categorical variables.
-###Cluster Characterization: Descriptive statistics were used to profile each cluster, focusing on the central tendencies and variabilities of metadata features within each group.
+# Cluster analysis with the metadata
 
-#Feature analysis with the metadata
-##Investigated the relationship between selected proteomic features and patient metadata
-###Statistical Analysis: conducted correlation analysis for continuous features and for encoded categorical variables to identify any significant associations with patient metadata.
-###Machine Learning: A Random Forest algorithm was applied to assess feature importance in predicting clinical outcomes such as tumor size and survival status.
-###Visualization: Heatmaps and bar charts were generated to visualize the strength and nature of the relationships between features and metadata.
+## Explores the relationship between patient metadata features and predefined patient clusters.The clusters were identified in previous analyses based on proteomic data.
+## Methdology: 
+### Data Integration: Combined the patient metadata with the existing cluster assignments to create a unified dataset for analysis.
+### Statistical Examination: Conducted statistical tests to compare the distribution of metadata features across the different clusters. This included ANOVA for continuous variables and Chi-square tests for categorical variables.
+### Cluster Characterization: Descriptive statistics were used to profile each cluster, focusing on the central tendencies and variabilities of metadata features within each group.
+
+# Feature analysis with the metadata
+## Investigated the relationship between selected proteomic features and patient metadata
+### Statistical Analysis: conducted correlation analysis for continuous features and for encoded categorical variables to identify any significant associations with patient metadata.
+### Machine Learning: A Random Forest algorithm was applied to assess feature importance in predicting clinical outcomes such as tumor size and survival status.
+### Visualization: Heatmaps and bar charts were generated to visualize the strength and nature of the relationships between features and metadata.
 
